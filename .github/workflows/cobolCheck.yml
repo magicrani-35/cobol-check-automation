@@ -25,6 +25,8 @@ jobs:
         run: npm install --global @zowe/cli
           
       - name: Setup Mainframe Environment and Upload COBOL Check
+      
+        timeout-minutes: 5
         env:
           ZOWE_USERNAME: ${{ secrets.ZOWE_USERNAME }}
           ZOWE_PASSWORD: ${{ secrets.ZOWE_PASSWORD }}
