@@ -40,10 +40,13 @@ jobs:
           chmod +x .github/scripts/zowe_operations.sh
           .github/scripts/zowe_operations.sh
 
-      - name: Run COBOL Check on Mainframe
+      - name: Verify COBOL Check Environment on Mainframe
+      
+        timeout-minutes: 5
         env:
           ZOWE_USERNAME: ${{ secrets.ZOWE_USERNAME }}
           ZOWE_PASSWORD: ${{ secrets.ZOWE_PASSWORD }}
+          ZOWE_HOST: 204.90.115.200
         run: |
           chmod +x .github/scripts/mainframe_operations.sh
           .github/scripts/mainframe_operations.sh
