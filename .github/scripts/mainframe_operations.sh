@@ -18,8 +18,8 @@ $COBOL_CHECK_DIRECTORY"
 
 zowe zos-ssh issue command \
   "pwd; java -version; ls -la; ls -la bin; ls -la scripts" \
-  --cwd "$COBOL_CHECK_DIRECTORY" \
-  --host "$ZOWE_HOST" \
+  --cwd "$TARGET_DIRECTORY" \
+  --host "$ZOWE_OPT_HOST" \
   --port 22 \
   --user "$ZOWE_USERNAME" \
   --password "$ZOWE_PASSWORD" \
