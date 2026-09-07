@@ -31,7 +31,7 @@ zowe zos-files upload dir-to-uss \
   "./cobol-check" \
   "$TARGET_DIRECTORY" \
   --recursive \
-  --binary-files "*.jar"
+  --binary-files "bin/cobol-check-0.2.19.jar"
 
 # Verify the uploaded contents.
 echo "Verifying upload..."
