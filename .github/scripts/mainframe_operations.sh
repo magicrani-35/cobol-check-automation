@@ -23,7 +23,7 @@ zowe zos-ssh issue command \
   --port 22 \
   --user "$ZOWE_USERNAME" \
   --password "$ZOWE_PASSWORD" \
-  --host-key "SHA256:1YtEA18or6MI0VQnVQn7ZUCtFVkJMRStN+DnqJZaxPk"
+  --host-key "$ZOWE_HOST_KEY"
 
 echo "Remote USS verification completed."
 
