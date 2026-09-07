@@ -6,7 +6,7 @@ set -euo pipefail
 
 # Convert the mainframe username to lowercase for its USS home path. 
 LOWERCASE_USERNAME=$(
-  echo "ZOWE_USERNAME" | tr '[:upper:]' '[:lower:]'
+  echo "$ZOWE_USERNAME" | tr '[:upper:]' '[:lower:]'
   )
 
 USS_HOME="/z/$LOWERCASE_USERNAME"
