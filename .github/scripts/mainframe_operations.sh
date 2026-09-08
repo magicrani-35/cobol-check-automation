@@ -17,8 +17,7 @@ echo "Remote COBOL Check directory:
 $COBOL_CHECK_DIRECTORY"
 
 zowe zos-ssh issue command \
-  "java -jar bin/cobol-check-0.2.19.jar --programs NUMBERS && test -s 'testruns/CC##99.CBL' && cp 'testruns/CC##99.CBL'
-  \"//'${ZOWE_USERNAME}.CBL(NUMBERS)'\"" \
+  "java -jar bin/cobol-check-0.2.19.jar --programs NUMBERS && test -s 'testruns/CC##99.CBL' && cp 'testruns/CC##99.CBL' \"//'${ZOWE_USERNAME}.CBL(NUMBERS)'\"" \
   --cwd "$COBOL_CHECK_DIRECTORY" \
   --host "$ZOWE_HOST" \
   --port 22 \
