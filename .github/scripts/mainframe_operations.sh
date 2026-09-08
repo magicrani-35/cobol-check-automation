@@ -39,6 +39,20 @@ zowe zos-files upload file-to-data-set \
 
 echo "NUMBERS COBOL and JCL members deployed successfully."
 
+# 3. Upload the repository's EMPPAY.JCL into Z83410.JCL(EMPPAY).
+echo "Uploading EMPPAY.JCL to ${ZOWE_USERNAME}.JCL(EMPPAY)..."
+
+zowe zos-files upload file-to-data-set \
+  "./EMPPAY.JCL" \
+  "${ZOWE_USERNAME}.JCL(EMPPAY)" \
+  --host "$ZOWE_HOST" \
+  --port 10443 \
+  --user "$ZOWE_USERNAME" \
+  --password "$ZOWE_PASSWORD" \
+  --reject-unauthorized false
+
+echo "EMPPAY COBOL and JCL members deployed successfully."
+
 echo "Remote USS verification completed."
 
 
