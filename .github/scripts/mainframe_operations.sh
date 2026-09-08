@@ -29,7 +29,7 @@ zowe zos-ssh issue command \
 echo "Uploading NUMBERS.JCL to ${ZOWE_USERNAME}.JCL(NUMBERS)..."
 
 zowe zos-files upload file-to-data-set \
-  "./NUMBERS>JCL" \
+  "./NUMBERS.JCL" \
   "${ZOWE_USERNAME}.JCL(NUMBERS)" \
   --host "$ZOWE_HOST" \
   --port 10443 \
