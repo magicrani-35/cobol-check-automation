@@ -1,3 +1,4 @@
+//DEPTPAYJ JOB 1,NOTIFY=&SYSUID
 //*****************************************************
 //COBRUN  EXEC IGYWCL
 //COBOL.SYSIN DD DSN=&SYSUID..CBL(DEPTPAY),DISP=SHR

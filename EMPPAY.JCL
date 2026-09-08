@@ -1,4 +1,4 @@
-//EMPAY JOB 1,NOTIFY=&SYSUID
+//EMPPAYJ JOB 1,NOTIFY=&SYSUID
 //*********************************************************
 //* Copyright Contributors to the COBOL Programming Course
 //* SPDX-License-Identifier: CC-BY-4.0
@@ -14,4 +14,4 @@
 //SYSOUT     DD  SYSOUT=*,OUTLIM=15000
 //CEEDUMP    DD  DUMMY
 //SYSUDUMP   DD  DUMMY
-//  ENDIF
+// ENDIF
